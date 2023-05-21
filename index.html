@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body class="light-theme">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-5">
+            </div>
+            <div class="col-6">
+                <h1>Simple website</h1>
+            </div>
+            <div class="col-1">
+                <button class="btn">Dark</button>
+            </div>
+        </div>
+        <div class="dark">
+            <div class="row">
+                <div class="col-5">
+                </div>
+                <div class="col-6">
+                    <p>Simple website with a dark mode button</p>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 row mt-2">
+                    <div class="col-4"></div>
+                    <div class="col-3 row">
+                        <div class="col-12">
+                            <img src="logo_zora.png" id="zora" class="rounded float-start" alt=""></div>
+                    </div>
+                    <div class="col-5 row">
+                        <div class="col-1"></div>
+                        <div class="col-11">
+                        <button type="button" class="btn btn-secondary btn-lg" id="zoraspan">Les Zoras sont des créatures aquatiques pacifiques.
+                            Ils sont d'excellents nageurs, qui peuvent aller très vite dans l'eau.
+                            La Prodige de ce peuple était Mipha.</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 row mt-2">
+                    <div class="col-3"></div>
+                    <div class="col-5 row">
+                        <div class="col-12">
+                            <img src="logo_piaf.png" id="piaf" class="rounded float-start" alt=""></div>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-secondary btn-lg" id="piafspan">Les Piafs sont des créatures humanoïdes à l'apparence d'oiseaux.
+                            Ils sont capables de voler et sont de nature très fier.
+                            Le Prodige de ce peuple était Revali.</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <span class=""> comment se nomme la soeur de Sidon, prince du peuple Zora?</span>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <select class="form-select" id="Q1" aria-label="Default select example">
+                                <option hidden selected> choisissez votre reponse</option>
+                                <option value="1">sila</option>
+                                <option value="2">mipha</option>
+                                <option value="3">remi</option>
+                                <option value="4">lapha</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <div class="col-4">
+                                <span class="input-group-text" id="R1T"> &nbsp&nbsp✅</span>
+                                <span class="input-group-text" id="R1F"> &nbsp&nbsp❌</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <span class="">Comment se nomme l'ombre de Ganon qui a tué Revali ?</span>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <select class="form-select" id="Q4" aria-label="Default select example">
+                                <option hidden selected> choisissez votre reponse</option>
+                                <option value="1">L'ombre de l'ouragan de Ganon</option>
+                                <option value="2">L'ombre de la tempête de Ganon</option>
+                                <option value="3">L'ombre de vent de Ganon</option>
+                                <option value="4">L'ombre de la bourrasque de Ganon</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <div class="col-4">
+                                <span class="input-group-text" id="R4T"> &nbsp&nbsp✅</span>
+                                <span class="input-group-text" id="R4F"> &nbsp&nbsp❌</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 row mt-4">
+                    <div class="col-4"></div>
+                    <div class="col-4 row">
+                        <div class="col-1"></div>
+                        <div class="col-11">
+                            <img src="logo_gerudo.png" id="gerudo" class="rounded float-start" alt=""></div>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-secondary btn-lg" id="gerudospan">Les Gerudos sont un peuple de femmes guerrières dirigées par un homme naissant tous les siècles.
+                            Elles sont selon les jeux des voleuses, des pirates ou des marchandes.
+                            La Prodige de ce peuple était Urbosa.</button>
+                    </div>
+                </div>
+                <div class="col-6 row mt-4">
+                    <div class="col-4"></div>
+                    <div class="col-4 row">
+                        <div class="col-1"></div>
+                        <div class="col-11">
+                            <img src="logo_goron.png" id="goron" class="rounded float-start" alt=""></div>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-secondary btn-lg" id="goronspan">Les Gorons sont des créatures constituées de roches et vivants dans les montagnes.
+                            Ils sont de très bons forgerons, et leur dos est couvert d'une carapce très solide.
+                            Le Prodige de ce peuple était Daruk.</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <span class=""> L'équipement d'Urbosa se compose du Cimeterre des Sept Joyaux, du Bouclier des Sept Joyaux, et du ?</span>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <select class="form-select" id="Q3" aria-label="Default select example">
+                                <option hidden selected> choisissez votre reponse</option>
+                                <option value="1">masque du Tonnerre</option>
+                                <option value="2">masque de la Foudre</option>
+                                <option value="3">masque Foudroyant</option>
+                                <option value="4">masque Electrique</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <div class="col-4">
+                                <span class="input-group-text" id="R3T"> &nbsp&nbsp✅</span>
+                                <span class="input-group-text" id="R3F"> &nbsp&nbsp❌</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <span class="">A quoi sert le bouclier de Daruk, technique obtenue par Link dans Breath of the Wild?</span>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <select class="form-select" id="Q2" aria-label="Default select example">
+                                <option hidden selected> choisissez votre reponse</option>
+                                <option value="1">protéger des effets du climat</option>
+                                <option value="2">réduire les dégats de chute</option>
+                                <option value="3">maintient les points de vie de Link à 1 lorsqu'il devrait mourir la première fois</option>
+                                <option value="4">parer et renvoyer les attaques lorsque le bouclier est actif</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <div class="col-4">
+                                <span class="input-group-text" id="R2T"> &nbsp&nbsp✅</span>
+                                <span class="input-group-text" id="R2F"> &nbsp&nbsp❌</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row mt-5">
+                    <div class="col-1"></div>
+                    <div class="col-11 row">
+                        <div class="col-5"></div>
+                        <div class="col-7">
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspValider&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Félicitations !</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    Vous avez repondue correctement à toutes les questions, vous avez donc débloqué la partie bonus !
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="light">
+            <div class="hiding">
+                <div class="row m-5"></div>
+                <div class="row m-5"></div>
+                <div class="row m-5"></div>
+                <div class="row m-5"></div>
+                <div class="row m-5"></div>
+                <div class="row m-5"></div>
+                <div class="row m-5">
+                    <div class="col-2"></div>
+                    <div class="col-8" id="waiting">
+                        <h3>REPONDEZ AUX QUESTIONS DU LIGHT MODE POUR DEBLOQUER LA PARTIE BONUS</h3>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="not_hiding">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6 row">
+                        <img src="new_final_fini.png" id="fin" class="rounded float-start" alt="">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-4"></div>
+                    <div class="col-4"><h4>Quel est le nom du prochain opus qui est leak ci-dessus ?</h4></div>
+                    <div class="col-4"></div>
+                </div>
+                <div class="col-3"></div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 row mt-5">
+                        <div class="col-5 text-center">
+                            <input type="radio" class="btn-check" id="btn-check-outlined1" name="options-outlined">
+                            <label class="btn btn-outline-dark" for="btn-check-outlined1">The legend of Seb: Tears of the students</label><br>
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-5 text-center">
+                            <input type="radio" class="btn-check" id="btn-check-outlined2" name="options-outlined">
+                            <label class="btn btn-outline-dark" for="btn-check-outlined2">Epitech Warriors: l'ère des Segfault</label><br>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 row mt-5">
+                        <div class="col-5 text-center">
+                            <input type="radio" class="btn-check" id="btn-check-outlined3" name="options-outlined">
+                            <label class="btn btn-outline-dark" for="btn-check-outlined3">The legend of Seb: Gab's Awakening</label><br>
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-5 text-center">
+                            <input type="radio" class="btn-check" id="btn-check-outlined4" name="options-outlined">
+                            <label class="btn btn-outline-dark" for="btn-check-outlined4">The legend of Seb: Skyward Mouli</label><br>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-5"></div>
+                    <div class="col-2 text-center">
+                        <input type="button" class="btn btn-dark" id="fini2" value="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Valider &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp">
+                    </div>
+                    <div class="col-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/esm/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <script src="app.js"></script>
+  </body>
+</html>
