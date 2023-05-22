@@ -100,6 +100,8 @@ $(document).ready(function() {
         if ($(this).is(":checked")) {
             if ($(this).attr("id") == "btn-check-outlined3") {
                 $("#fin").attr("src", "final_win.png");
+            } else {
+                $("#fin").attr("src", "newimg.png");
             }
         }
         });
