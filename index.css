@@ -17,6 +17,7 @@ body {
     background: var(--bg);
     color: var(--fontColor);
     font-family: helvetica;
+    
 }
 
 ul {
@@ -43,8 +44,9 @@ font-family: monospace;
 .btn {
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+    margin-top: 10%;
+    margin-bottom: 2.5%;
 }
-
 
 .light-theme {
     --bg: var(--white);
@@ -59,3 +61,17 @@ font-family: monospace;
     --btnBg: var(--white);
     --btnFontColor: var(--black);
 }
+
+#copyright {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+#copyright {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
